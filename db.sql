@@ -37,4 +37,8 @@ FROM article;
 
 SELECT *
 FROM `member`;
-
+/*
+SELECT COUNT(*) > 0
+FROM `member`
+WHERE loginId = 'aaa'
+*/
