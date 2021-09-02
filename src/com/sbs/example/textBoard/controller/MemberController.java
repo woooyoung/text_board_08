@@ -85,7 +85,7 @@ public class MemberController extends Controller {
 			break;
 
 		}
-		memberService.join(loginId,loginPw,name);
+		memberService.join(loginId, loginPw, name);
 
 		System.out.printf("%s님 환영합니다.\n", name);
 	}
