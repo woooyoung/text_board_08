@@ -3,6 +3,7 @@ package com.sbs.example.textBoard.controller;
 import java.sql.Connection;
 import java.util.Scanner;
 
+import com.sbs.example.textBoard.Container;
 import com.sbs.example.textBoard.dto.Member;
 import com.sbs.example.textBoard.service.MemberService;
 
@@ -10,9 +11,8 @@ public class MemberController extends Controller {
 
 	private MemberService memberService;
 
-	public MemberController(Connection conn, Scanner sc) {
-		super(sc);
-		memberService = new MemberService(conn);
+	public MemberController() {
+		memberService = Container.memberService;
 	}
 
 	public void join(String command) {
