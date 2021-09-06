@@ -1,8 +1,5 @@
 package com.sbs.example.textBoard.controller;
 
-import java.sql.Connection;
-import java.util.Scanner;
-
 import com.sbs.example.textBoard.Container;
 import com.sbs.example.textBoard.dto.Member;
 import com.sbs.example.textBoard.service.MemberService;
